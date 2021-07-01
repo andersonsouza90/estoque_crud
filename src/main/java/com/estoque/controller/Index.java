@@ -12,6 +12,6 @@ public class Index {
 	
 	@GetMapping(value = "/", produces = "application/json")
 	public ResponseEntity<String> index() {
-		return new ResponseEntity("Aquii!", HttpStatus.OK);
+		return new ResponseEntity<String>("Aquii!", HttpStatus.OK);
 	}
 }
